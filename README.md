@@ -15,7 +15,7 @@ RANSAC follows these basic procedures:
 5. Repeat the previous steps **k** times
 
 Pseudo-code:
-
+```
 class RANSAC:
     def init(self, model, loss_fun, n, k, t)
         initilize the parameters and define containers 
@@ -35,7 +35,7 @@ class RANSAC:
             bestFit = model.fit(inliers)
             num_inliers = len(inliers)
             inliers = inliers
-
+```
 The fit function will depends on the dimension of your data. RANSAC is applicable to every type of model however modification of the fit function is needed.
 
 ## Application
